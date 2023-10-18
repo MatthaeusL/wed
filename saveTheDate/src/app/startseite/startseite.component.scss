@@ -1,0 +1,28 @@
+.slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .slide {
+    display: inline-block;
+    transition: transform 1s ease;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .active {
+    animation: slide 5s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
